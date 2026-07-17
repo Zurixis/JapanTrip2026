@@ -27,6 +27,11 @@ self.addEventListener("activate", (event) => {
 // Cache-first for our own files, network-first (with cache fallback) for CDN libs
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
+
+  // Cache API only supports http/https — skip chrome-extension:// and similar
+  if (url.protocol !== "http:" && url.protocol !== "https:") return;
+  if (event.request.method !== "GET") return;
+
   const isOwnAsset = url.origin === self.location.origin;
 
   if (isOwnAsset) {
