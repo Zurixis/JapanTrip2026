@@ -109,10 +109,10 @@ const DAYS = [
   {
     id: "2026-10-05",
     label: "5. okt",
-    stage: "Osaka \u2192 Wakayama \u2192 Tokushima",
-    transport: "ferje",
-    distance: "0 km sykling (fotpassasjer)",
-    plan: "Tog til Wakayama, ferje Wakayama\u2013Tokushima utan sykkel. Hent utleigesykkel fr\xE5 Yeti & Ltb ved fergeterminalen i Tokushima.",
+    stage: "Osaka \u2192 Tokushima",
+    transport: "tog",
+    distance: null,
+    plan: "Tog fr\xE5 Osaka til Tokushima. Hent utleigesykkel fr\xE5 Yeti & Ltb (levering til Tokushima stasjon).",
     tough: false,
     highlights: [
       { name: "Awa Odori Kaikan", note: "Museum/danseshow, ca. 09:00\u201317:00" },
@@ -124,13 +124,15 @@ const DAYS = [
     label: "6. okt",
     stage: "Tokushima \u2192 Shishikui",
     transport: "sykkel",
-    distance: "ca. 85 km",
+    distance: "ca. 80 km",
     plan: "Kystetappe s\xF8r langs Route 55.",
     tough: false,
     highlights: [
       { name: "Cape Kamoda", note: "Kystutsikt undervegs" },
       { name: "Ikumi Beach", note: "Ein av dei beste surfestadane p\xE5 Shikoku, fin solnedgang" },
-      { name: "Sea Turtle Museum, Hiwasa", note: "Alternativ roleg stopp" }
+      { name: "Sea Turtle Museum, Hiwasa", note: "Alternativ roleg stopp" },
+      { name: "Yakuoji-templet (\u85AC\u738B\u5BFA)", note: "Tempel nr. 23 p\xE5 88-tempelruta, midt i Hiwasa" },
+      { name: "Hiwasa-borga (utsiktst\xE5rn)", note: "Utsikt over kystbyen og hamna" }
     ]
   },
   {
@@ -152,15 +154,19 @@ const DAYS = [
     label: "8. okt",
     stage: "Shishikui \u2192 Muroto \u2192 Aki",
     transport: "sykkel",
-    distance: "ca. 88 km",
+    distance: "ca. 80 km",
     plan: "Kystveg, Cape Muroto.",
     tough: true,
     toughNote: "Lang dag, ofte vind \u2014 Cape Muroto ligg eksponert",
     highlights: [
       { name: "Cape Muroto", note: "Turens h\xF8gdepunkt \u2014 klipper, fyr, dramatisk kystlandskap" },
+      { name: "Muroto-fyret", note: "Eitt av Japans \xAB100 utvalde fyr\xBB" },
+      { name: "Hotsumisakiji-templet (\u6700\u5FA1\u5D0E\u5BFA)", note: "Tempel nr. 24 p\xE5 88-tempelruta, heilt oppe p\xE5 kapet" },
       { name: "Muroto Global Geopark Center", note: "Utstilling om geologien i omr\xE5det" },
       { name: "Mikuriya Cave", note: "Naturformasjon og historisk stad ved havet" },
-      { name: "Aki Castle Ruins", note: "Kort stopp, roleg omr\xE5de" }
+      { name: "Muroto Haik\u014D-akvariet (nedlagt skule)", note: "Akvarium i gamle klasserom og symjebasseng" },
+      { name: "Aki Castle Ruins", note: "Kort stopp, roleg omr\xE5de" },
+      { name: "Iwasaki Yataro sin f\xF8destad", note: "Barndomsheimen til grunnleggjaren av Mitsubishi-konsernet" }
     ]
   },
   {
@@ -175,7 +181,8 @@ const DAYS = [
       { name: "Kochi Castle", note: "Eit av Japans best bevarte originale slott, ca. 09:00\u201317:00" },
       { name: "Hirome Market", note: "Katsuo no tataki \u2014 beste matoppleving i Kochi" },
       { name: "Katsurahama Beach", note: "Statue av Sakamoto Ryoma" },
-      { name: "Sakamoto Ryoma Memorial Museum", note: "" }
+      { name: "Sakamoto Ryoma Memorial Museum", note: "" },
+      { name: "Harimaya-brua", note: "Vesle, kjende landemerket \u2014 kort spasertur fr\xE5 Hirome Market" }
     ]
   },
   {
@@ -184,52 +191,60 @@ const DAYS = [
     stage: "Kochi",
     transport: "rest",
     distance: "0 km",
-    plan: "Kviledag i Kochi \u2014 vendepunktet p\xE5 turen. Vask klede, kvile, oppleve byen.",
+    plan: "Kviledag i Kochi. Vask klede, kvile, oppleve byen.",
     tough: false,
-    highlights: []
+    highlights: [
+      { name: "Chikurinji-templet (\u7AF9\u6797\u5BFA)", note: "Tempel nr. 31 p\xE5 88-tempelruta, oppe p\xE5 Godaisan-\xE5sen" },
+      { name: "Makino botaniske hage", note: "Rett ved Chikurinji-templet" },
+      { name: "Sundagsmarknaden (\u65E5\u66DC\u5E02)", note: "300+ \xE5r gamal gatemarknad langs Otesuji-gata \u2014 kvar sundag" }
+    ]
   },
   {
     id: "2026-10-11",
     label: "11. okt",
-    stage: "Kochi \u2192 Aki",
+    stage: "Kochi \u2192 Susaki",
     transport: "sykkel",
-    distance: "ca. 45 km",
-    plan: "Start p\xE5 returetappen, same kystveg tilbake.",
+    distance: "ca. 30\u201355 km",
+    plan: "Vidare vestover langs kysten fr\xE5 Kochi.",
     tough: false,
     highlights: []
   },
   {
     id: "2026-10-12",
     label: "12. okt",
-    stage: "Aki \u2192 Muroto \u2192 Shishikui",
+    stage: "Susaki \u2192 Nakamura/Shimanto",
     transport: "sykkel",
-    distance: "ca. 88 km",
-    plan: "Cape Muroto igjen, motsett retning.",
+    distance: "ca. 75\u201380 km",
+    plan: "Lengste etappa p\xE5 denne strekninga.",
     tough: true,
-    toughNote: "Lang dag, ofte vind \u2014 same som 8. okt",
+    toughNote: "Lengste dag av dei vestlege etappane \u2014 start tidleg",
     holiday: true,
     holidayNote: "12. oktober 2026 er \u30B9\u30DD\u30FC\u30C4\u306E\u65E5 (Sports Day) \u2014 nasjonal heilagdag i Japan. Overnattingsstader kan vere fullbooka eller dyrare denne helga. Bestill overnatting i god tid.",
-    highlights: [{ name: "Cape Muroto", note: "Verdt eit nytt stopp, andre lyset denne gongen" }]
+    highlights: [
+      { name: "Shimanto River", note: "Ein av Japans reinaste elvar" },
+      { name: "Chinkabashi-bruer", note: "Tradisjonelle bruer utan rekkverk, fleire langs elva" },
+      { name: "Yasunami Waterwheel", note: "Lite, lokalt stopp i Nakamura" }
+    ]
   },
   {
     id: "2026-10-13",
     label: "13. okt",
-    stage: "Shishikui \u2192 Tokushima",
+    stage: "Nakamura \u2192 Sukumo",
     transport: "sykkel",
-    distance: "ca. 85 km",
-    plan: "Siste sykkeldag. Lever sykkelen hos Yeti & Ltb ved fergeterminalen.",
+    distance: "ca. 25\u201330 km",
+    plan: "Kort, roleg avslutning p\xE5 sykkeldelen.",
     tough: false,
     highlights: []
   },
   {
     id: "2026-10-14",
     label: "14. okt",
-    stage: "Tokushima",
-    transport: "rest",
+    stage: "Sukumo \u2192 Tokushima",
+    transport: "tog",
     distance: null,
-    plan: "Bufferdag / kviledag i Tokushima. Alternativ: dagstur til Naruto-kvervlane.",
+    plan: "Lang togreise attende til Tokushima, truleg med fleire bytar. Sjekk togtider p\xE5 f\xF8rehand.",
     tough: false,
-    highlights: [{ name: "Naruto-kvervlane", note: "Alternativ dagstur \u2014 nokre av verdas st\xF8rste tidevasskvervlar" }]
+    highlights: []
   },
   {
     id: "2026-10-15",
@@ -237,15 +252,15 @@ const DAYS = [
     stage: "Tokushima",
     transport: "rest",
     distance: null,
-    plan: "Ekstra buffer ved d\xE5rleg v\xEAr/forsinkingar.",
+    plan: "Lever sykkelen hos Yeti & Ltb. Bufferdag / kviledag. Alternativ: dagstur til Naruto-kvervlane.",
     tough: false,
-    highlights: []
+    highlights: [{ name: "Naruto-kvervlane", note: "Alternativ dagstur \u2014 nokre av verdas st\xF8rste tidevasskvervlar" }]
   },
   {
     id: "2026-10-16",
     label: "16. okt",
     stage: "Tokushima \u2192 Osaka",
-    transport: "ferje",
+    transport: "tog",
     distance: null,
     plan: "Retur til Osaka.",
     tough: false,
@@ -583,19 +598,19 @@ const SIGHTS = [
     place: "Hiwasa",
     name: "Hiwasa Hachiman-jinja haustfestival",
     type: "festival",
-    desc: "Eitt av dei st\xF8rste haustfestivalane i Tokushima \u2014 trommevogner (\u3061\u3087\u3046\u3055) paraderer til \u014Chama-stranda, med kveldsfyrverkeri. 2026: laurdag 10. og s\xF8ndag 11. oktober. Du syklar gjennom Hiwasa 6. okt (nokre dagar f\xF8r) og er innom att 13. okt (rett etter) \u2014 vurder \xE5 justere ruta litt om du vil oppleve han."
+    desc: "Eitt av dei st\xF8rste haustfestivalane i Tokushima \u2014 trommevogner (\u3061\u3087\u3046\u3055) paraderer til \u014Chama-stranda, med kveldsfyrverkeri. 2026: laurdag 10. og s\xF8ndag 11. oktober. Du syklar gjennom Hiwasa 6. okt, nokre dagar f\xF8r \u2014 og med denne ruta kjem du ikkje attende her seinare. Vurder \xE5 justere avreisedatoen litt om du vil oppleve han."
   },
   {
     id: "s-osatomatsuri",
-    dayId: "2026-10-12",
+    dayId: "2026-10-06",
     place: "Kaiyo/Shishikui",
     name: "\u014Czato Hachiman-jinja haustfestival",
     type: "festival",
-    desc: "Stort haustfestival i Kaiyo-cho med festivalb\xE5tar (\u95A2\u8239) og vogner (\u3060\u3093\u3058\u308A) langs \u014Czato-stranda, pluss fyrverkeri. Offisiell dato 2026: s\xF8ndag 11. oktober \u2014 \xE9in dag f\xF8r du etter planen er attende i Shishikui (12. okt). Vurder \xE5 justere tidsplanen ein dag om du vil rekke han."
+    desc: "Stort haustfestival i Kaiyo-cho med festivalb\xE5tar (\u95A2\u8239) og vogner (\u3060\u3093\u3058\u308A) langs \u014Czato-stranda, pluss fyrverkeri. Offisiell dato 2026: s\xF8ndag 11. oktober. Du er i Shishikui-omr\xE5det 6.\u20137. okt, nokre dagar f\xF8r \u2014 med denne ruta g\xE5r du ikkje attende hit. Vurder \xE5 justere tidsplanen om du vil rekke han."
   },
   {
     id: "s-naruto",
-    dayId: "2026-10-14",
+    dayId: "2026-10-15",
     place: "Naruto",
     name: "Naruto-kvervlane",
     type: "natur",
@@ -729,7 +744,6 @@ const PACKING_CATEGORIES = [
     "Powerbank (10 000\u201320 000 mAh)",
     "USB-kablar",
     "Adapter til japansk stikkontakt (Type A)",
-    "Ekstra minnekort (om kamera)",
     "Offline kart lasta ned",
     "GPX-filer lagra offline"
   ]) },
@@ -756,7 +770,6 @@ const PACKING_CATEGORIES = [
     "Sykkelhanskar",
     "Sykkeljakke/vindjakke",
     "Regnjakke for sykling",
-    "Regnbukse (anbefalt i Japan i oktober)",
     "Armvarmarar",
     "Beinvarmarar",
     "Buff/hals",
@@ -786,7 +799,7 @@ const PACKING_CATEGORIES = [
   ]) },
   { id: "reg", name: "Regn og v\xEArutstyr", items: mkItems("reg", [
     "Gore-Tex/regnjakke",
-    "Regnbukse",
+    "Regnbukse (anbefalt i Japan i oktober)",
     "Regntrekk til sykkelveske",
     "Regntrekk til sekk",
     "Vanntette pakkeposar",
@@ -830,11 +843,8 @@ const PACKING_CATEGORIES = [
     "Barberutstyr (om n\xF8dvendig)"
   ]) },
   { id: "apo", name: "Toalettsaker \u2014 reiseapotek", items: mkItems("apo", [
-    "Smertestillande",
-    "Gnags\xE5rplaster",
     "Vanlege plaster",
     "Desinfeksjon",
-    "Sportsteip",
     "Elektrolyttar",
     "Solkrem",
     "Myggmiddel",
@@ -855,8 +865,7 @@ const PACKING_CATEGORIES = [
     "N\xF8tter",
     "Elektrolyttpulver",
     "Lite bestikk",
-    "Sammenleggbar kopp (valfritt)",
-    "Vassflasker"
+    "Sammenleggbar kopp (valfritt)"
   ]) },
   { id: "nyt", name: "Ekstra nyttig i Japan", items: mkItems("nyt", [
     "ICOCA-kort (transportkort)",
@@ -871,12 +880,9 @@ const PACKING_CATEGORIES = [
     "Liten dagbok/notatbok"
   ]) },
   { id: "dig", name: "Reiseapp og digitale ting", items: mkItems("dig", [
-    "Offline kart",
-    "GPX-ruter",
     "Hotelladresser p\xE5 japansk",
     "Flyinformasjon",
     "Reiseforsikring lagra offline",
-    "Passkopi",
     "Budsjettoversikt",
     "Oversikt over n\xF8dnummer",
     "Japanske frasar"
@@ -1534,11 +1540,14 @@ function Pakkeliste() {
   const [custom, setCustom] = useState({});
   const [overrides, setOverrides] = useState({});
   const [deleted, setDeleted] = useState({});
+  const [categoryNames, setCategoryNames] = useState({});
+  const [deletedCategories, setDeletedCategories] = useState({});
   const [loaded, setLoaded] = useState(false);
   const [addingTo, setAddingTo] = useState(null);
   const [newLabel, setNewLabel] = useState("");
   const [editMode, setEditMode] = useState(false);
   const [drafts, setDrafts] = useState({});
+  const [catDrafts, setCatDrafts] = useState({});
   const [collapsed, setCollapsed] = useState(
     () => Object.fromEntries(PACKING_CATEGORIES.map((c) => [c.id, true]))
   );
@@ -1549,10 +1558,14 @@ function Pakkeliste() {
       const cu = await loadJSON("packing-custom", {});
       const ov = await loadJSON("packing-overrides", {});
       const del = await loadJSON("packing-deleted", {});
+      const catNames = await loadJSON("packing-category-names", {});
+      const delCats = await loadJSON("packing-deleted-categories", {});
       setChecked(c);
       setCustom(cu);
       setOverrides(ov);
       setDeleted(del);
+      setCategoryNames(catNames);
+      setDeletedCategories(delCats);
       setLoaded(true);
     })();
   }, []);
@@ -1593,12 +1606,32 @@ function Pakkeliste() {
     setChecked(nextChecked);
     saveJSON("packing-checked", nextChecked);
   };
+  const commitCatDraft = (catId, defaultName) => {
+    const value = catDrafts[catId];
+    const next = { ...categoryNames };
+    if (value === void 0 || value === defaultName || !value.trim()) delete next[catId];
+    else next[catId] = value;
+    setCategoryNames(next);
+    saveJSON("packing-category-names", next);
+  };
+  const deleteCategory = (cat) => {
+    if (!window.confirm(`Slette heile kategorien \xAB${catLabel(cat)}\xBB og alle punkta i han?`)) return;
+    const next = { ...deletedCategories, [cat.id]: true };
+    setDeletedCategories(next);
+    saveJSON("packing-deleted-categories", next);
+    const nextChecked = { ...checked };
+    [...cat.items, ...custom[cat.id] || []].forEach((i) => delete nextChecked[i.id]);
+    setChecked(nextChecked);
+    saveJSON("packing-checked", nextChecked);
+  };
   if (!loaded) return /* @__PURE__ */ React.createElement("p", { style: { color: C.inkSoft }, className: "text-sm text-center py-8" }, "Lastar\u2026");
   const label = (item) => overrides[item.id] || item.label;
+  const catLabel = (cat) => categoryNames[cat.id] || cat.name;
+  const activeCategories = PACKING_CATEGORIES.filter((cat) => !deletedCategories[cat.id]);
   const allCategoryItems = (cat) => [...cat.items, ...custom[cat.id] || []].filter((i) => !deleted[i.id]);
-  const totalItems = PACKING_CATEGORIES.reduce((sum, cat) => sum + allCategoryItems(cat).length, 0);
+  const totalItems = activeCategories.reduce((sum, cat) => sum + allCategoryItems(cat).length, 0);
   const totalChecked = Object.values(checked).filter(Boolean).length;
-  const archiveGroups = PACKING_CATEGORIES.map((cat) => ({ cat, items: allCategoryItems(cat).filter((i) => checked[i.id]) })).filter((g) => g.items.length > 0);
+  const archiveGroups = activeCategories.map((cat) => ({ cat, items: allCategoryItems(cat).filter((i) => checked[i.id]) })).filter((g) => g.items.length > 0);
   return /* @__PURE__ */ React.createElement("div", { className: "space-y-4" }, /* @__PURE__ */ React.createElement("div", { style: { background: C.ai900 }, className: "rounded-xl p-3.5 flex items-center justify-between" }, /* @__PURE__ */ React.createElement("span", { style: { color: C.washi }, className: "text-sm font-semibold" }, "Pakkeframdrift"), /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-3" }, /* @__PURE__ */ React.createElement("span", { style: { color: C.coral }, className: "text-sm font-bold" }, totalChecked, " / ", totalItems), /* @__PURE__ */ React.createElement(
     "button",
     {
@@ -1610,7 +1643,7 @@ function Pakkeliste() {
   ))), editMode && /* @__PURE__ */ React.createElement("p", { style: { color: C.inkSoft }, className: "text-xs -mt-2" }, "Endre tekst eller slett punkt. Endringar vert lagra automatisk n\xE5r du forl\xE8t eit felt."), !editMode && /* @__PURE__ */ React.createElement("div", { className: "flex gap-2 -mt-2" }, /* @__PURE__ */ React.createElement(
     "button",
     {
-      onClick: () => setCollapsed(Object.fromEntries(PACKING_CATEGORIES.map((c) => [c.id, false]))),
+      onClick: () => setCollapsed(Object.fromEntries(activeCategories.map((c) => [c.id, false]))),
       style: { color: C.ai700 },
       className: "text-xs font-semibold"
     },
@@ -1618,17 +1651,29 @@ function Pakkeliste() {
   ), /* @__PURE__ */ React.createElement("span", { style: { color: C.ai200 }, className: "text-xs" }, "\xB7"), /* @__PURE__ */ React.createElement(
     "button",
     {
-      onClick: () => setCollapsed(Object.fromEntries(PACKING_CATEGORIES.map((c) => [c.id, true]))),
+      onClick: () => setCollapsed(Object.fromEntries(activeCategories.map((c) => [c.id, true]))),
       style: { color: C.ai700 },
       className: "text-xs font-semibold"
     },
     "Lukk alle"
-  )), PACKING_CATEGORIES.map((cat) => {
+  )), activeCategories.map((cat) => {
     const allItems = allCategoryItems(cat);
     const items = editMode ? allItems : allItems.filter((i) => !checked[i.id]);
     const doneInCat = allItems.filter((i) => checked[i.id]).length;
     const isOpen = editMode || !collapsed[cat.id];
-    return /* @__PURE__ */ React.createElement("div", { key: cat.id }, /* @__PURE__ */ React.createElement(
+    return /* @__PURE__ */ React.createElement("div", { key: cat.id }, editMode ? /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mb-1.5" }, /* @__PURE__ */ React.createElement(
+      "input",
+      {
+        value: catDrafts[cat.id] !== void 0 ? catDrafts[cat.id] : catLabel(cat),
+        onChange: (e) => setCatDrafts({ ...catDrafts, [cat.id]: e.target.value }),
+        onBlur: () => commitCatDraft(cat.id, cat.name),
+        onKeyDown: (e) => {
+          if (e.key === "Enter") e.target.blur();
+        },
+        style: { borderColor: C.ai200, color: C.ai700, fontFamily: "'Zilla Slab', serif" },
+        className: "flex-1 border rounded-lg px-2.5 py-1.5 text-xs font-bold uppercase tracking-wide bg-transparent outline-none"
+      }
+    ), /* @__PURE__ */ React.createElement("button", { onClick: () => deleteCategory(cat), className: "shrink-0", title: "Slett heile kategorien" }, /* @__PURE__ */ React.createElement(Trash2, { size: 15, color: C.coral }))) : /* @__PURE__ */ React.createElement(
       "button",
       {
         onClick: () => toggleCollapsed(cat.id),
@@ -1640,7 +1685,7 @@ function Pakkeliste() {
           style: { color: C.ai700, fontFamily: "'Zilla Slab', serif" },
           className: "text-xs font-bold uppercase tracking-wide"
         },
-        cat.name
+        catLabel(cat)
       ),
       /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 shrink-0" }, /* @__PURE__ */ React.createElement("span", { style: { color: C.inkSoft }, className: "text-[11px]" }, doneInCat, "/", allItems.length), /* @__PURE__ */ React.createElement(
         ChevronDown,
@@ -1687,7 +1732,7 @@ function Pakkeliste() {
         className: "w-full flex items-center gap-2 px-4 py-2.5 text-xs font-semibold"
       },
       "+ Legg til i \xAB",
-      cat.name,
+      catLabel(cat),
       "\xBB"
     ))));
   }), !editMode && /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(
@@ -1697,7 +1742,7 @@ function Pakkeliste() {
       className: "text-sm font-bold uppercase tracking-wide mb-2 flex items-center gap-1.5"
     },
     "\u{1F4E6} Arkiv \u2014 ferdig pakka"
-  ), archiveGroups.length === 0 ? /* @__PURE__ */ React.createElement("p", { style: { color: C.inkSoft }, className: "text-xs" }, "Ingenting pakka enno \u2014 kryss av ting etter kvart som dei kjem i sykkelvesla.") : /* @__PURE__ */ React.createElement("div", { className: "space-y-3" }, archiveGroups.map(({ cat, items }) => /* @__PURE__ */ React.createElement("div", { key: cat.id }, /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-[11px] font-semibold uppercase mb-1" }, cat.name), /* @__PURE__ */ React.createElement("div", { style: { background: C.paper, borderColor: C.ai200 }, className: "rounded-xl border divide-y" }, items.map((item) => /* @__PURE__ */ React.createElement(
+  ), archiveGroups.length === 0 ? /* @__PURE__ */ React.createElement("p", { style: { color: C.inkSoft }, className: "text-xs" }, "Ingenting pakka enno \u2014 kryss av ting etter kvart som dei kjem i sykkelvesla.") : /* @__PURE__ */ React.createElement("div", { className: "space-y-3" }, archiveGroups.map(({ cat, items }) => /* @__PURE__ */ React.createElement("div", { key: cat.id }, /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-[11px] font-semibold uppercase mb-1" }, catLabel(cat)), /* @__PURE__ */ React.createElement("div", { style: { background: C.paper, borderColor: C.ai200 }, className: "rounded-xl border divide-y" }, items.map((item) => /* @__PURE__ */ React.createElement(
     "button",
     {
       key: item.id,
@@ -1916,10 +1961,14 @@ function App() {
     "div",
     {
       style: { fontFamily: "'Work Sans', sans-serif", background: C.washi },
-      className: "max-w-md mx-auto min-h-[700px] flex flex-col relative"
+      className: "app-shell max-w-md mx-auto flex flex-col relative"
     },
     /* @__PURE__ */ React.createElement("style", null, `
         @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Work+Sans:wght@400;500;600&family=Space+Mono&display=swap');
+        .app-shell {
+          height: 100vh;   /* fallback for browsers without dvh support */
+          height: 100dvh;  /* accounts for mobile browser toolbars showing/hiding on scroll */
+        }
       `),
     /* @__PURE__ */ React.createElement("div", { style: { background: C.ai900 }, className: "px-5 py-3 flex items-center justify-between shrink-0" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(
       "div",
@@ -1928,7 +1977,7 @@ function App() {
         className: "text-base font-bold tracking-wide"
       },
       "\u963F\u6CE2\u571F\u4F50\u8857\u9053"
-    ), /* @__PURE__ */ React.createElement("div", { style: { color: C.ai200 }, className: "text-[10px] uppercase tracking-widest" }, "Tokushima \u2194 Kochi \xB7 Osaka tur/retur")), /* @__PURE__ */ React.createElement(Mountain, { size: 20, color: C.coral })),
+    ), /* @__PURE__ */ React.createElement("div", { style: { color: C.ai200 }, className: "text-[10px] uppercase tracking-widest" }, "Tokushima \u2192 Sukumo \xB7 Osaka tur/retur")), /* @__PURE__ */ React.createElement(Mountain, { size: 20, color: C.coral })),
     /* @__PURE__ */ React.createElement("div", { className: "flex-1 overflow-y-auto" }, tab === "dashboard" && overridesLoaded && /* @__PURE__ */ React.createElement(
       DayDetail,
       {
