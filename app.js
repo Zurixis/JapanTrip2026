@@ -60,7 +60,6 @@ const DAYS = [
     transport: "fly",
     distance: null,
     plan: "Avreise fr\xE5 Noreg.",
-    tough: false,
     highlights: []
   },
   {
@@ -70,7 +69,6 @@ const DAYS = [
     transport: "rest",
     distance: null,
     plan: "Lande, sjekke inn, utforske Dotonbori/Namba.",
-    tough: false,
     highlights: [
       { name: "Dotonbori og Namba", note: "Perfekt f\xF8rste kveld \u2014 takoyaki, okonomiyaki, kanalen" },
       { name: "Osaka Castle", note: "09:00\u201317:00, siste inngang ca. 16:30" }
@@ -83,7 +81,6 @@ const DAYS = [
     transport: "rest",
     distance: null,
     plan: "Utforsk Osaka i eige tempo. Ta det rolig f\xF8r turen.",
-    tough: false,
     highlights: []
   },
   {
@@ -93,7 +90,6 @@ const DAYS = [
     transport: "tog",
     distance: "Dagstur (Shinkansen)",
     plan: "Dagstur til Nagoya med Shinkansen, ca. 1t40 min kvar veg.",
-    tough: false,
     highlights: []
   },
   {
@@ -103,7 +99,6 @@ const DAYS = [
     transport: "rest",
     distance: null,
     plan: "Siste dag i Osaka f\xF8r sykkelturen. Sjekk v\xEArmelding, pakk sykkelklede.",
-    tough: false,
     highlights: []
   },
   {
@@ -113,7 +108,6 @@ const DAYS = [
     transport: "tog",
     distance: null,
     plan: "Tog fr\xE5 Osaka til Tokushima. Hent utleigesykkel fr\xE5 Yeti & Ltb (levering til Tokushima stasjon).",
-    tough: false,
     highlights: [
       { name: "Awa Odori Kaikan", note: "Museum/danseshow, ca. 09:00\u201317:00" },
       { name: "Bizan-fjellet", note: "Utsikt over byen, taubane ca. 09:00\u201321:00" }
@@ -126,7 +120,6 @@ const DAYS = [
     transport: "sykkel",
     distance: "ca. 80 km",
     plan: "Kystetappe s\xF8r langs Route 55.",
-    tough: false,
     highlights: [
       { name: "Cape Kamoda", note: "Kystutsikt undervegs" },
       { name: "Ikumi Beach", note: "Ein av dei beste surfestadane p\xE5 Shikoku, fin solnedgang" },
@@ -142,8 +135,6 @@ const DAYS = [
     transport: "sykkel",
     distance: "ca. 60 km t/r",
     plan: "Sykkeltur innover elvedalen p\xE5 Route 193 til Todoroki Kujuku-fossane (ein av Japans 100 beste fossar, hovudfallet 58 m). Snu ved fossane og sykle tilbake til Shishikui for overnatting.",
-    tough: true,
-    toughNote: "Fjelldal-veg \u2014 sett av god tid. Ikkje fortsett vidare over fjellovergangen mot Naka-cho, den skal vere smal med steinsprangfare.",
     highlights: [
       { name: "Todoroki-fossen (honmeki)", note: "58 m fallh\xF8gd \u2014 Tokushimas h\xF8gste foss" },
       { name: "Todoroki Kujuku-fossane", note: "Rundt 1,5 km gangsti forbi fleire mindre fossar, om du vil g\xE5 litt til fots" }
@@ -156,8 +147,6 @@ const DAYS = [
     transport: "sykkel",
     distance: "ca. 80 km",
     plan: "Kystveg, Cape Muroto.",
-    tough: true,
-    toughNote: "Lang dag, ofte vind \u2014 Cape Muroto ligg eksponert",
     highlights: [
       { name: "Cape Muroto", note: "Turens h\xF8gdepunkt \u2014 klipper, fyr, dramatisk kystlandskap" },
       { name: "Muroto-fyret", note: "Eitt av Japans \xAB100 utvalde fyr\xBB" },
@@ -176,7 +165,6 @@ const DAYS = [
     transport: "sykkel",
     distance: "ca. 45 km",
     plan: "Kort dag inn til Kochi.",
-    tough: false,
     highlights: [
       { name: "Kochi Castle", note: "Eit av Japans best bevarte originale slott, ca. 09:00\u201317:00" },
       { name: "Hirome Market", note: "Katsuo no tataki \u2014 beste matoppleving i Kochi" },
@@ -192,7 +180,6 @@ const DAYS = [
     transport: "rest",
     distance: "0 km",
     plan: "Kviledag i Kochi. Vask klede, kvile, oppleve byen.",
-    tough: false,
     highlights: [
       { name: "Chikurinji-templet (\u7AF9\u6797\u5BFA)", note: "Tempel nr. 31 p\xE5 88-tempelruta, oppe p\xE5 Godaisan-\xE5sen" },
       { name: "Makino botaniske hage", note: "Rett ved Chikurinji-templet" },
@@ -206,7 +193,6 @@ const DAYS = [
     transport: "sykkel",
     distance: "ca. 30\u201355 km",
     plan: "Vidare vestover langs kysten fr\xE5 Kochi.",
-    tough: false,
     highlights: []
   },
   {
@@ -216,10 +202,6 @@ const DAYS = [
     transport: "sykkel",
     distance: "ca. 75\u201380 km",
     plan: "Lengste etappa p\xE5 denne strekninga.",
-    tough: true,
-    toughNote: "Lengste dag av dei vestlege etappane \u2014 start tidleg",
-    holiday: true,
-    holidayNote: "12. oktober 2026 er \u30B9\u30DD\u30FC\u30C4\u306E\u65E5 (Sports Day) \u2014 nasjonal heilagdag i Japan. Overnattingsstader kan vere fullbooka eller dyrare denne helga. Bestill overnatting i god tid.",
     highlights: [
       { name: "Shimanto River", note: "Ein av Japans reinaste elvar" },
       { name: "Chinkabashi-bruer", note: "Tradisjonelle bruer utan rekkverk, fleire langs elva" },
@@ -233,7 +215,6 @@ const DAYS = [
     transport: "sykkel",
     distance: "ca. 25\u201330 km",
     plan: "Kort, roleg avslutning p\xE5 sykkeldelen.",
-    tough: false,
     highlights: []
   },
   {
@@ -243,7 +224,6 @@ const DAYS = [
     transport: "tog",
     distance: null,
     plan: "Lang togreise attende til Tokushima, truleg med fleire bytar. Sjekk togtider p\xE5 f\xF8rehand.",
-    tough: false,
     highlights: []
   },
   {
@@ -253,7 +233,6 @@ const DAYS = [
     transport: "rest",
     distance: null,
     plan: "Lever sykkelen hos Yeti & Ltb. Bufferdag / kviledag. Alternativ: dagstur til Naruto-kvervlane.",
-    tough: false,
     highlights: [{ name: "Naruto-kvervlane", note: "Alternativ dagstur \u2014 nokre av verdas st\xF8rste tidevasskvervlar" }]
   },
   {
@@ -263,7 +242,6 @@ const DAYS = [
     transport: "tog",
     distance: null,
     plan: "Retur til Osaka.",
-    tough: false,
     highlights: []
   },
   {
@@ -273,7 +251,6 @@ const DAYS = [
     transport: "rest",
     distance: null,
     plan: "Bufferdag + sightseeing. Sikrar at du er klar f\xF8r fly.",
-    tough: false,
     highlights: [
       { name: "Kuromon Market", note: "Matmarknad, ca. 09:00\u201318:00" },
       { name: "Shinsekai + Tsutenkaku", note: "Retro Osaka, mat og kveldsstemning" },
@@ -287,7 +264,6 @@ const DAYS = [
     transport: "rest",
     distance: null,
     plan: "Ekstra buffer ved d\xE5rleg v\xEAr/forsinkingar.",
-    tough: false,
     highlights: []
   },
   {
@@ -297,7 +273,6 @@ const DAYS = [
     transport: "fly",
     distance: null,
     plan: "Heimreise.",
-    tough: false,
     highlights: []
   }
 ];
@@ -380,6 +355,23 @@ const FOOD_ITEMS = [
     note: "Kochi er kjend for t\xF8rr, \xABtanrei karakuchi\xBB-stil sake. Godt f\xF8lgje til katsuo no tataki."
   }
 ];
+const ROUTE_PLACES = [
+  { key: "Osaka", label: "Osaka", match: ["Osaka"] },
+  { key: "Nagoya", label: "Nagoya", match: ["Nagoya"] },
+  { key: "Tokushima", label: "Tokushima", match: ["Tokushima", "Naruto"] },
+  { key: "Hiwasa", label: "Hiwasa", match: ["Hiwasa"] },
+  { key: "Kaiyo", label: "Kaiyo / Shishikui", match: ["Kaiyo", "Shishikui"] },
+  { key: "Muroto", label: "Muroto", match: ["Muroto"] },
+  { key: "Aki", label: "Aki", match: ["Aki"] },
+  { key: "Kochi", label: "Kochi", match: ["Kochi"] },
+  { key: "Susaki", label: "Susaki", match: ["Susaki"] },
+  { key: "Nakamura", label: "Nakamura / Shimanto", match: ["Nakamura", "Shimanto"] },
+  { key: "Sukumo", label: "Sukumo", match: ["Sukumo"] }
+];
+function matchRoutePlace(placeStr) {
+  const found = ROUTE_PLACES.find((rp) => rp.match.some((kw) => placeStr.includes(kw)));
+  return found ? found.key : null;
+}
 const SIGHT_TYPES = {
   natur: { label: "Natur", color: "#4C8C82" },
   kultur: { label: "Kultur", color: "#8B5E9A" },
@@ -945,6 +937,12 @@ const TRANSPORT_OPTIONS = [
   { value: "fly", label: "\u2708\uFE0F Fly" },
   { value: "rest", label: "\u23F8\uFE0F Kvile / ingen transport" }
 ];
+const DEFAULT_WARNINGS = [
+  { text: "Todoroki-fossane: fjelldal-veg p\xE5 Route 193 \u2014 sett av god tid. Ikkje fortsett vidare over fjellovergangen mot Naka-cho, den skal vere smal med steinsprangfare.", warnDate: "2026-10-07" },
+  { text: "Shishikui \u2192 Muroto \u2192 Aki: lang dag, ofte vind \u2014 Cape Muroto ligg eksponert.", warnDate: "2026-10-08" },
+  { text: "Susaki \u2192 Nakamura/Shimanto: lengste dag av dei vestlege etappane \u2014 start tidleg.", warnDate: "2026-10-12" },
+  { text: "12. oktober 2026 er \u30B9\u30DD\u30FC\u30C4\u306E\u65E5 (Sports Day) \u2014 nasjonal heilagdag i Japan. Overnattingsstader kan vere fullbooka eller dyrare denne helga. Bestill overnatting i god tid.", warnDate: "2026-10-12" }
+];
 function fmtLongDate(iso) {
   const d = /* @__PURE__ */ new Date(iso + "T00:00:00");
   return d.toLocaleDateString("nb-NO", { weekday: "long", day: "numeric", month: "long" });
@@ -1009,7 +1007,7 @@ function Stamp({ n, active, done, size = 40 }) {
     n
   );
 }
-function DayDetail({ day, index, onPrev, onNext }) {
+function DayDetail({ day, index, onPrev, onNext, usefulInfo }) {
   const [notes, setNotes] = useState("");
   const [actualKm, setActualKm] = useState("");
   const [ready, setReady] = useState(false);
@@ -1085,47 +1083,23 @@ function DayDetail({ day, index, onPrev, onNext }) {
       className: "text-2xl font-bold leading-tight"
     },
     day.stage
-  ), /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mt-1" }, /* @__PURE__ */ React.createElement(Icon, { size: 16, color: C.coral }), /* @__PURE__ */ React.createElement("span", { style: { color: C.ai200 }, className: "text-sm" }, day.distance || "\u2014"))))), /* @__PURE__ */ React.createElement("div", { className: "px-5 -mt-4 pb-10 space-y-4" }, /* @__PURE__ */ React.createElement(
+  ), /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 mt-1" }, /* @__PURE__ */ React.createElement(Icon, { size: 16, color: C.coral }), day.distance && /* @__PURE__ */ React.createElement("span", { style: { color: C.ai200 }, className: "text-sm" }, day.distance))))), /* @__PURE__ */ React.createElement("div", { className: "px-5 -mt-4 pb-10 space-y-4" }, /* @__PURE__ */ React.createElement(
     "div",
     {
       style: { background: C.paper, borderColor: C.ai200 },
       className: "rounded-2xl border p-4 shadow-sm"
     },
     /* @__PURE__ */ React.createElement("p", { style: { color: C.ink }, className: "text-sm leading-relaxed" }, day.plan)
-  ), day.tough && /* @__PURE__ */ React.createElement(
+  ), (usefulInfo || []).filter((w) => w.warnDate === day.id).map((w) => /* @__PURE__ */ React.createElement(
     "div",
     {
+      key: w.id,
       style: { background: "#FBE9E1", borderColor: C.coral },
       className: "rounded-2xl border p-4 flex gap-3 items-start"
     },
     /* @__PURE__ */ React.createElement(AlertTriangle, { size: 18, color: C.coral, className: "shrink-0 mt-0.5" }),
-    /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { style: { color: C.coral }, className: "text-sm font-semibold" }, "T\xF8ff etappe"), /* @__PURE__ */ React.createElement("div", { style: { color: C.ink }, className: "text-sm" }, day.toughNote))
-  ), day.holiday && /* @__PURE__ */ React.createElement(
-    "div",
-    {
-      style: { background: "#FBF3D9", borderColor: "#C9A227" },
-      className: "rounded-2xl border p-4 flex gap-3 items-start"
-    },
-    /* @__PURE__ */ React.createElement(AlertTriangle, { size: 18, color: "#C9A227", className: "shrink-0 mt-0.5" }),
-    /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { style: { color: "#9C7E1A" }, className: "text-sm font-semibold" }, "Nasjonal heilagdag"), /* @__PURE__ */ React.createElement("div", { style: { color: C.ink }, className: "text-sm" }, day.holidayNote))
-  ), day.highlights.length > 0 && /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(
-    "h3",
-    {
-      style: { color: C.ai700, fontFamily: "'Zilla Slab', serif" },
-      className: "text-sm font-bold uppercase tracking-wide mb-2 flex items-center gap-1"
-    },
-    /* @__PURE__ */ React.createElement(Flag, { size: 14 }),
-    " Stopp og attraksjonar"
-  ), /* @__PURE__ */ React.createElement("div", { className: "space-y-2" }, day.highlights.map((h, i) => /* @__PURE__ */ React.createElement(
-    "div",
-    {
-      key: i,
-      style: { background: C.paper, borderColor: C.ai200 },
-      className: "rounded-xl border px-3 py-2.5"
-    },
-    /* @__PURE__ */ React.createElement("div", { style: { color: C.ink }, className: "text-sm font-semibold" }, h.name),
-    h.note && /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-xs mt-0.5" }, h.note)
-  )))), /* @__PURE__ */ React.createElement(
+    /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { style: { color: C.coral }, className: "text-sm font-semibold" }, "Varsel"), /* @__PURE__ */ React.createElement("div", { style: { color: C.ink }, className: "text-sm whitespace-pre-wrap" }, w.text))
+  )), /* @__PURE__ */ React.createElement(
     "div",
     {
       style: { background: C.paper, borderColor: C.ai200 },
@@ -1156,18 +1130,20 @@ function DayDetail({ day, index, onPrev, onNext }) {
     }
   ))));
 }
-function ItineraryList({ days, onSelect, onEditStage, onEditTransport, onEditAccommodation }) {
+function ItineraryList({ days, onSelect, onEditStage, onEditTransport, onEditAccommodation, onEditDistance, usefulInfo }) {
   const [editingId, setEditingId] = useState(null);
   const [editValue, setEditValue] = useState("");
   const [editTransport, setEditTransport] = useState("sykkel");
   const [editAccName, setEditAccName] = useState("");
   const [editAccAddress, setEditAccAddress] = useState("");
+  const [editDistance, setEditDistance] = useState("");
   const startEdit = (d) => {
     setEditingId(d.id);
     setEditValue(d.stage);
     setEditTransport(d.transport);
     setEditAccName(d.accommodation?.name || "");
     setEditAccAddress(d.accommodation?.address || "");
+    setEditDistance(d.distance || "");
   };
   const saveEdit = (d) => {
     const trimmed = editValue.trim();
@@ -1175,6 +1151,7 @@ function ItineraryList({ days, onSelect, onEditStage, onEditTransport, onEditAcc
     onEditTransport(d.id, editTransport);
     const name = editAccName.trim();
     onEditAccommodation(d.id, name ? { name, address: editAccAddress.trim() } : null);
+    onEditDistance(d.id, editDistance.trim());
     setEditingId(null);
   };
   return /* @__PURE__ */ React.createElement("div", { style: { background: C.washi }, className: "min-h-full px-5 py-6" }, /* @__PURE__ */ React.createElement(
@@ -1236,6 +1213,16 @@ function ItineraryList({ days, onSelect, onEditStage, onEditTransport, onEditAcc
           style: { borderColor: C.ai200, color: C.ink },
           className: "w-full border rounded-lg px-2.5 py-1.5 text-sm bg-transparent outline-none"
         }
+      )), /* @__PURE__ */ React.createElement("div", { style: { borderColor: C.ai200 }, className: "border-t pt-2 mt-1" }, /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-[11px] font-semibold uppercase mb-1.5" }, "Ca. km"), /* @__PURE__ */ React.createElement(
+        "input",
+        {
+          type: "text",
+          value: editDistance,
+          onChange: (e) => setEditDistance(e.target.value),
+          placeholder: "t.d. ca. 80 km \u2014 tom om ikkje aktuelt",
+          style: { borderColor: C.ai200, color: C.ink },
+          className: "w-full border rounded-lg px-2.5 py-1.5 text-sm bg-transparent outline-none"
+        }
       )), /* @__PURE__ */ React.createElement("div", { className: "flex gap-2" }, /* @__PURE__ */ React.createElement(
         "button",
         {
@@ -1253,7 +1240,7 @@ function ItineraryList({ days, onSelect, onEditStage, onEditTransport, onEditAcc
           className: "flex-1 rounded-lg py-1.5 text-xs font-semibold border"
         },
         "Avbryt"
-      ))) : /* @__PURE__ */ React.createElement("div", { className: "flex items-center justify-between gap-2" }, /* @__PURE__ */ React.createElement("button", { onClick: () => onSelect(i), className: "min-w-0 text-left flex-1" }, /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-xs" }, d.label), /* @__PURE__ */ React.createElement("div", { style: { color: C.ink }, className: "text-sm font-semibold truncate" }, d.stage), /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-1.5 mt-1" }, /* @__PURE__ */ React.createElement(Icon, { size: 13, color: C.coral }), /* @__PURE__ */ React.createElement("span", { style: { color: C.inkSoft }, className: "text-xs" }, d.distance || "\u2014"), d.tough && /* @__PURE__ */ React.createElement(AlertTriangle, { size: 12, color: C.coral, className: "ml-1" }), d.holiday && /* @__PURE__ */ React.createElement(Sparkles, { size: 12, color: "#C9A227", className: "ml-1" })), d.accommodation && /* @__PURE__ */ React.createElement("div", { style: { color: C.teal }, className: "text-[11px] mt-1 flex items-center gap-1 truncate" }, /* @__PURE__ */ React.createElement(Sparkles, { size: 11, className: "shrink-0" }), " ", d.accommodation.name)), /* @__PURE__ */ React.createElement("button", { onClick: () => startEdit(d), className: "shrink-0 p-1.5" }, /* @__PURE__ */ React.createElement(Pencil, { size: 15, color: C.ai200 })), /* @__PURE__ */ React.createElement("button", { onClick: () => onSelect(i), className: "shrink-0" }, /* @__PURE__ */ React.createElement(ChevronRight, { size: 18, color: C.ai200 })))
+      ))) : /* @__PURE__ */ React.createElement("div", { className: "flex items-center justify-between gap-2" }, /* @__PURE__ */ React.createElement("button", { onClick: () => onSelect(i), className: "min-w-0 text-left flex-1" }, /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-xs" }, d.label), /* @__PURE__ */ React.createElement("div", { style: { color: C.ink }, className: "text-sm font-semibold truncate" }, d.stage), /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-1.5 mt-1" }, /* @__PURE__ */ React.createElement(Icon, { size: 13, color: C.coral }), /* @__PURE__ */ React.createElement("span", { style: { color: C.inkSoft }, className: "text-xs" }, d.distance || "\u2014"), (usefulInfo || []).some((w) => w.warnDate === d.id) && /* @__PURE__ */ React.createElement(AlertTriangle, { size: 12, color: C.coral, className: "ml-1" })), d.accommodation && /* @__PURE__ */ React.createElement("div", { style: { color: C.teal }, className: "text-[11px] mt-1 flex items-center gap-1 truncate" }, /* @__PURE__ */ React.createElement(Sparkles, { size: 11, className: "shrink-0" }), " ", d.accommodation.name)), /* @__PURE__ */ React.createElement("button", { onClick: () => startEdit(d), className: "shrink-0 p-1.5" }, /* @__PURE__ */ React.createElement(Pencil, { size: 15, color: C.ai200 })), /* @__PURE__ */ React.createElement("button", { onClick: () => onSelect(i), className: "shrink-0" }, /* @__PURE__ */ React.createElement(ChevronRight, { size: 18, color: C.ai200 })))
     ));
   })));
 }
@@ -1272,6 +1259,7 @@ function MatSightseeing() {
   const [subTab, setSubTab] = useState("sightseeing");
   const [statusMap, setStatusMap] = useState({});
   const [typeFilter, setTypeFilter] = useState(null);
+  const [placeFilter, setPlaceFilter] = useState("");
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
     (async () => {
@@ -1288,8 +1276,13 @@ function MatSightseeing() {
     setStatusMap(nextMap);
     saveJSON("sight-status", nextMap);
   };
-  const visibleSights = typeFilter ? SIGHTS.filter((s) => s.type === typeFilter) : SIGHTS;
+  const placesInUse = ROUTE_PLACES.filter(
+    (rp) => SIGHTS.some((s) => matchRoutePlace(s.place) === rp.key) || FOOD_ITEMS.some((f) => matchRoutePlace(f.place) === rp.key)
+  );
+  let visibleSights = typeFilter ? SIGHTS.filter((s) => s.type === typeFilter) : SIGHTS;
+  if (placeFilter) visibleSights = visibleSights.filter((s) => matchRoutePlace(s.place) === placeFilter);
   const visitedCount = SIGHTS.filter((s) => statusMap[s.id] === "besokt").length;
+  const visibleFood = placeFilter ? FOOD_ITEMS.filter((f) => matchRoutePlace(f.place) === placeFilter) : FOOD_ITEMS;
   return /* @__PURE__ */ React.createElement("div", { style: { background: C.washi }, className: "min-h-full px-5 py-6" }, /* @__PURE__ */ React.createElement(
     "h2",
     {
@@ -1329,6 +1322,16 @@ function MatSightseeing() {
       /* @__PURE__ */ React.createElement(ChefHat, { size: 14 }),
       " Mat"
     )
+  ), /* @__PURE__ */ React.createElement(
+    "select",
+    {
+      value: placeFilter,
+      onChange: (e) => setPlaceFilter(e.target.value),
+      style: { borderColor: C.ai200, color: C.ink },
+      className: "w-full border rounded-lg px-3 py-2 text-sm bg-transparent outline-none mb-3"
+    },
+    /* @__PURE__ */ React.createElement("option", { value: "" }, "Alle stader"),
+    placesInUse.map((rp) => /* @__PURE__ */ React.createElement("option", { key: rp.key, value: rp.key }, rp.label))
   ), subTab === "sightseeing" ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "flex gap-1.5 overflow-x-auto pb-3 mb-1" }, /* @__PURE__ */ React.createElement(
     "button",
     {
@@ -1368,7 +1371,7 @@ function MatSightseeing() {
       /* @__PURE__ */ React.createElement("button", { onClick: () => cycleStatus(s.id), className: "shrink-0 mt-0.5", disabled: !loaded }, /* @__PURE__ */ React.createElement(StatusIcon, { size: 22, color: meta.color, fill: status === "favoritt" ? meta.color : "none" })),
       /* @__PURE__ */ React.createElement("div", { className: "min-w-0 flex-1" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2 flex-wrap mb-1" }, /* @__PURE__ */ React.createElement("span", { style: { color: C.ink }, className: "text-sm font-semibold" }, s.name), /* @__PURE__ */ React.createElement(TypeBadge, { type: s.type })), /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-xs" }, s.place), /* @__PURE__ */ React.createElement("p", { style: { color: C.ink }, className: "text-xs mt-1 leading-relaxed" }, s.desc), s.hours && /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-[11px] mt-1" }, "\u{1F550} ", s.hours))
     );
-  }))) : /* @__PURE__ */ React.createElement("div", { className: "space-y-2" }, FOOD_ITEMS.map((f) => /* @__PURE__ */ React.createElement(
+  }))) : /* @__PURE__ */ React.createElement("div", { className: "space-y-2" }, visibleFood.map((f) => /* @__PURE__ */ React.createElement(
     "div",
     {
       key: f.id,
@@ -1769,7 +1772,7 @@ function RubyText({ text }) {
 function PhraseCard({ p }) {
   return /* @__PURE__ */ React.createElement("div", { style: { background: C.paper, borderColor: C.ai200 }, className: "rounded-xl border p-4" }, /* @__PURE__ */ React.createElement("div", { style: { color: C.ink, fontFamily: "'Zilla Slab', serif", lineHeight: 2.1 }, className: "text-xl mb-1.5" }, /* @__PURE__ */ React.createElement(RubyText, { text: p.jp })), /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-sm" }, p.no));
 }
-function Notat({ days }) {
+function Notat({ days, usefulInfo, onUpdateUsefulInfo }) {
   const [notatSub, setNotatSub] = useState("dagbok");
   return /* @__PURE__ */ React.createElement("div", { style: { background: C.washi }, className: "min-h-full px-5 py-6" }, /* @__PURE__ */ React.createElement(
     "h2",
@@ -1810,7 +1813,7 @@ function Notat({ days }) {
       /* @__PURE__ */ React.createElement(Sparkles, { size: 14 }),
       " Nyttig info"
     )
-  ), notatSub === "dagbok" ? /* @__PURE__ */ React.createElement(DagbokSummary, { days }) : /* @__PURE__ */ React.createElement(NyttigInfo, null));
+  ), notatSub === "dagbok" ? /* @__PURE__ */ React.createElement(DagbokSummary, { days }) : /* @__PURE__ */ React.createElement(NyttigInfo, { items: usefulInfo, onChange: onUpdateUsefulInfo }));
 }
 function DagbokSummary({ days }) {
   const [entries, setEntries] = useState([]);
@@ -1861,30 +1864,16 @@ ${kmLine}${e.note || ""}`;
     copied ? "Kopiert!" : `Kopier alle notat (${entries.length} dagar)`
   ), entries.map((e) => /* @__PURE__ */ React.createElement("div", { key: e.id, style: { background: C.paper, borderColor: C.ai200 }, className: "rounded-xl border p-4" }, /* @__PURE__ */ React.createElement("div", { style: { color: C.ai700 }, className: "text-xs font-bold uppercase tracking-wide capitalize" }, fmtLongDate(e.id)), /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-xs mb-2" }, e.stage), e.km && /* @__PURE__ */ React.createElement("div", { style: { color: C.coral }, className: "text-xs font-semibold mb-1" }, e.km, " km faktisk"), e.note && /* @__PURE__ */ React.createElement("p", { style: { color: C.ink }, className: "text-sm leading-relaxed whitespace-pre-wrap" }, e.note))));
 }
-function NyttigInfo() {
-  const [items, setItems] = useState([]);
+function NyttigInfo({ items, onChange }) {
   const [newText, setNewText] = useState("");
-  const [loaded, setLoaded] = useState(false);
-  useEffect(() => {
-    (async () => {
-      const saved = await loadJSON("useful-info", []);
-      setItems(saved);
-      setLoaded(true);
-    })();
-  }, []);
   const addItem = () => {
     if (!newText.trim()) return;
-    const entry = { id: Date.now().toString(), text: newText.trim(), date: (/* @__PURE__ */ new Date()).toISOString().slice(0, 10) };
-    const next = [entry, ...items];
-    setItems(next);
-    saveJSON("useful-info", next);
+    const entry = { id: Date.now().toString(), text: newText.trim(), date: (/* @__PURE__ */ new Date()).toISOString().slice(0, 10), warnDate: "" };
+    onChange([entry, ...items]);
     setNewText("");
   };
-  const deleteItem = (id) => {
-    const next = items.filter((i) => i.id !== id);
-    setItems(next);
-    saveJSON("useful-info", next);
-  };
+  const deleteItem = (id) => onChange(items.filter((i) => i.id !== id));
+  const setWarnDate = (id, value) => onChange(items.map((i) => i.id === id ? { ...i, warnDate: value } : i));
   return /* @__PURE__ */ React.createElement("div", { className: "space-y-3" }, /* @__PURE__ */ React.createElement("div", { style: { background: C.paper, borderColor: C.ai200 }, className: "rounded-xl border p-3.5 space-y-2.5" }, /* @__PURE__ */ React.createElement("label", { style: { color: C.ai700 }, className: "text-xs font-bold uppercase tracking-wide block" }, "Ny notis"), /* @__PURE__ */ React.createElement(
     "textarea",
     {
@@ -1903,14 +1892,31 @@ function NyttigInfo() {
       className: "w-full rounded-lg py-2 text-sm font-semibold"
     },
     "Legg til"
-  )), loaded && items.length === 0 && /* @__PURE__ */ React.createElement("p", { style: { color: C.inkSoft }, className: "text-sm text-center py-4" }, "Ingen notisar enno."), items.map((item) => /* @__PURE__ */ React.createElement(
+  )), /* @__PURE__ */ React.createElement(
+    "div",
+    {
+      style: { background: "#FBE9E1", borderColor: C.coral },
+      className: "rounded-xl border p-3 flex gap-2.5 items-start"
+    },
+    /* @__PURE__ */ React.createElement(AlertTriangle, { size: 16, color: C.coral, className: "shrink-0 mt-0.5" }),
+    /* @__PURE__ */ React.createElement("p", { style: { color: C.ink }, className: "text-xs leading-relaxed" }, 'Set ein dato p\xE5 ein notis for \xE5 vise han som eit varsel i "I dag" den dagen. Tom dato = berre ein vanleg notis her.')
+  ), items.length === 0 && /* @__PURE__ */ React.createElement("p", { style: { color: C.inkSoft }, className: "text-sm text-center py-4" }, "Ingen notisar enno."), items.map((item) => /* @__PURE__ */ React.createElement(
     "div",
     {
       key: item.id,
       style: { background: C.paper, borderColor: C.ai200 },
       className: "rounded-xl border p-3.5 flex items-start justify-between gap-2"
     },
-    /* @__PURE__ */ React.createElement("div", { className: "min-w-0" }, /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-[11px] mb-0.5" }, item.date), /* @__PURE__ */ React.createElement("p", { style: { color: C.ink }, className: "text-sm whitespace-pre-wrap" }, item.text)),
+    /* @__PURE__ */ React.createElement("div", { className: "min-w-0 flex-1" }, /* @__PURE__ */ React.createElement("div", { style: { color: C.inkSoft }, className: "text-[11px] mb-0.5" }, item.date), /* @__PURE__ */ React.createElement("p", { style: { color: C.ink }, className: "text-sm whitespace-pre-wrap mb-2" }, item.text), /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ React.createElement("label", { style: { color: C.ai700 }, className: "text-[11px] font-semibold uppercase shrink-0" }, "Varsel p\xE5:"), /* @__PURE__ */ React.createElement(
+      "input",
+      {
+        type: "date",
+        value: item.warnDate || "",
+        onChange: (e) => setWarnDate(item.id, e.target.value),
+        style: { borderColor: C.ai200, color: C.ink },
+        className: "border rounded-lg px-2 py-1 text-xs bg-transparent outline-none"
+      }
+    ), item.warnDate && /* @__PURE__ */ React.createElement("button", { onClick: () => setWarnDate(item.id, ""), style: { color: C.inkSoft } }, /* @__PURE__ */ React.createElement(X, { size: 14 })))),
     /* @__PURE__ */ React.createElement("button", { onClick: () => deleteItem(item.id), className: "shrink-0 p-1" }, /* @__PURE__ */ React.createElement(Trash2, { size: 16, color: C.coral }))
   )));
 }
@@ -1920,15 +1926,33 @@ function App() {
   const [stageOverrides, setStageOverrides] = useState({});
   const [transportOverrides, setTransportOverrides] = useState({});
   const [accommodationOverrides, setAccommodationOverrides] = useState({});
+  const [distanceOverrides, setDistanceOverrides] = useState({});
+  const [usefulInfo, setUsefulInfo] = useState([]);
   const [overridesLoaded, setOverridesLoaded] = useState(false);
   useEffect(() => {
     (async () => {
       const savedStage = await loadJSON("stage-overrides", {});
       const savedTransport = await loadJSON("transport-overrides", {});
       const savedAccommodation = await loadJSON("accommodation-overrides", {});
+      const savedDistance = await loadJSON("distance-overrides", {});
+      const savedInfo = await loadJSON("useful-info", null);
+      let info;
+      if (savedInfo === null) {
+        info = DEFAULT_WARNINGS.map((w, i) => ({
+          id: `seed-${i}`,
+          text: w.text,
+          date: (/* @__PURE__ */ new Date()).toISOString().slice(0, 10),
+          warnDate: w.warnDate
+        }));
+        saveJSON("useful-info", info);
+      } else {
+        info = savedInfo;
+      }
       setStageOverrides(savedStage);
       setTransportOverrides(savedTransport);
       setAccommodationOverrides(savedAccommodation);
+      setDistanceOverrides(savedDistance);
+      setUsefulInfo(info);
       setOverridesLoaded(true);
     })();
   }, []);
@@ -1937,9 +1961,11 @@ function App() {
       ...d,
       stage: stageOverrides[d.id] || d.stage,
       transport: transportOverrides[d.id] || d.transport,
-      accommodation: accommodationOverrides[d.id] || null
+      accommodation: accommodationOverrides[d.id] || null,
+      // distanceOverrides[d.id] can be "" (explicitly cleared -> hide) or undefined (never edited -> use default)
+      distance: d.id in distanceOverrides ? distanceOverrides[d.id] || null : d.distance
     })),
-    [stageOverrides, transportOverrides, accommodationOverrides]
+    [stageOverrides, transportOverrides, accommodationOverrides, distanceOverrides]
   );
   const day = effectiveDays[dayIndex];
   const handleEditStage = (dayId, newStage) => {
@@ -1956,6 +1982,15 @@ function App() {
     const next = { ...accommodationOverrides, [dayId]: accommodation };
     setAccommodationOverrides(next);
     saveJSON("accommodation-overrides", next);
+  };
+  const handleEditDistance = (dayId, newDistance) => {
+    const next = { ...distanceOverrides, [dayId]: newDistance };
+    setDistanceOverrides(next);
+    saveJSON("distance-overrides", next);
+  };
+  const handleUpdateUsefulInfo = (next) => {
+    setUsefulInfo(next);
+    saveJSON("useful-info", next);
   };
   return /* @__PURE__ */ React.createElement(
     "div",
@@ -1983,6 +2018,7 @@ function App() {
       {
         day,
         index: dayIndex,
+        usefulInfo,
         onPrev: () => setDayIndex((i) => Math.max(0, dayIndex - 1)),
         onNext: () => setDayIndex((i) => Math.min(effectiveDays.length - 1, dayIndex + 1))
       }
@@ -1993,12 +2029,14 @@ function App() {
         onEditStage: handleEditStage,
         onEditTransport: handleEditTransport,
         onEditAccommodation: handleEditAccommodation,
+        onEditDistance: handleEditDistance,
+        usefulInfo,
         onSelect: (i) => {
           setDayIndex(i);
           setTab("dashboard");
         }
       }
-    ), tab === "utforsk" && /* @__PURE__ */ React.createElement(MatSightseeing, null), tab === "pakking" && /* @__PURE__ */ React.createElement(Pakking, null), tab === "beredskap" && /* @__PURE__ */ React.createElement(Beredskap, null), tab === "notat" && /* @__PURE__ */ React.createElement(Notat, { days: effectiveDays })),
+    ), tab === "utforsk" && /* @__PURE__ */ React.createElement(MatSightseeing, null), tab === "pakking" && /* @__PURE__ */ React.createElement(Pakking, null), tab === "beredskap" && /* @__PURE__ */ React.createElement(Beredskap, null), tab === "notat" && overridesLoaded && /* @__PURE__ */ React.createElement(Notat, { days: effectiveDays, usefulInfo, onUpdateUsefulInfo: handleUpdateUsefulInfo })),
     /* @__PURE__ */ React.createElement("div", { style: { background: C.paper, borderColor: C.ai200 }, className: "border-t shrink-0" }, /* @__PURE__ */ React.createElement("div", { className: "flex" }, /* @__PURE__ */ React.createElement(
       "button",
       {
